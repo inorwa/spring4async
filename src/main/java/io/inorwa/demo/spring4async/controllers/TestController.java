@@ -19,4 +19,10 @@ public class TestController {
 		List<Long> calculate = calculationService.calculate();
 		return "OK " + LocalDateTime.now().toString() + "<br>" + "result:" + calculate;
 	}
+
+	@GetMapping("/test2")
+	public String test2(){
+		List<Long> calculate = calculationService.calculate2();
+		return "OK " + LocalDateTime.now().toString() + "<br>" + "result:" + calculate;
+	}
 }
